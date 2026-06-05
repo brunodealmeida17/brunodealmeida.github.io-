@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Bruno de Almeida Miranda - Full Stack Python Developer especializado em APIs, DevOps, AWS, Docker, Django, Flask e React.js." />
+  <title>Bruno Miranda | Full Stack Python Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="profile-card">
+        <div class="avatar" aria-hidden="true">BM</div>
+        <p class="eyebrow">Portfolio</p>
+        <h1>Bruno Miranda</h1>
+        <p class="role">Full Stack Python Developer</p>
+        <p class="location">Brasília, Brasil</p>
+      </div>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <button class="nav-link active" data-section="home" data-i18n="navHome">Início</button>
+        <button class="nav-link" data-section="about" data-i18n="navAbout">Sobre</button>
+        <button class="nav-link" data-section="experience" data-i18n="navExperience">Experiência</button>
+        <button class="nav-link" data-section="skills" data-i18n="navSkills">Skills</button>
+        <button class="nav-link" data-section="projects" data-i18n="navProjects">Projetos</button>
+        <button class="nav-link" data-section="genai" data-i18n="navGenai">Gen AI Lab</button>
+        <button class="nav-link" data-section="contact" data-i18n="navContact">Contato</button>
+      </nav>
+
+      <div class="theme-actions">
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Alternar tema">
+          <span>🌙</span> <span data-i18n="themeToggle">Alternar tema</span>
+        </button>
+        <div class="language-switch" aria-label="Selecionar idioma">
+          <button class="lang-button active" type="button" data-lang="pt">PT</button>
+          <button class="lang-button" type="button" data-lang="en">EN</button>
+          <button class="lang-button" type="button" data-lang="it">IT</button>
+        </div>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section id="home" class="section active-section" aria-labelledby="home-title">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="heroEyebrow">Backend • Python • APIs • GenAI</p>
+            <h2 id="home-title" data-i18n="heroHeading">Construindo sistemas escaláveis com Python, Django e Inteligência Artificial.</h2>
+            <p class="hero-text" data-i18n="heroText">
+              Desenvolvedor sênior com experiência em ambientes corporativos de alta demanda, combinando backend robusto, análise de sistemas, bancos de dados e aplicações inteligentes com LLMs, RAG e automação.
+            </p>
+            <div class="hero-actions">
+              <button class="primary-action" data-section-target="projects" data-i18n="heroPrimaryAction">Ver projetos</button>
+              <button class="secondary-action" data-section-target="genai" data-i18n="heroSecondaryAction">Abrir Gen AI Lab</button>
+            </div>
+          </div>
+
+          <div class="dashboard" aria-label="Resumo profissional em números">
+            <article class="metric-card">
+              <span class="metric" data-counter="5">0</span>
+              <p data-i18n="metricYears">anos de experiência</p>
+            </article>
+            <article class="metric-card">
+              <span class="metric" data-counter="18">0</span>
+              <p data-i18n="metricRepos">projetos no GitHub</p>
+            </article>
+            <article class="metric-card">
+              <span class="metric" data-counter="20">0</span>
+              <p data-i18n="metricTechnologies">tecnologias</p>
+            </article>
+            <article class="metric-card">
+              <span class="metric" data-counter="4">0</span>
+              <p data-i18n="metricAreas">áreas de atuação</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section" aria-labelledby="about-title">
+        <div class="section-header">
+          <p class="eyebrow" data-i18n="aboutEyebrow">Sobre mim</p>
+          <h2 id="about-title" data-i18n="aboutHeading">Da infraestrutura ao backend inteligente.</h2>
+        </div>
+        <div class="text-card">
+          <p data-i18n="aboutPara1">
+            Minha trajetória começou em suporte, infraestrutura e liderança técnica, o que me deu uma visão prática sobre usuários, estabilidade, operação e impacto real da tecnologia no negócio.
+          </p>
+          <p data-i18n="aboutPara2">
+            Hoje atuo como desenvolvedor sênior com foco em Python, Django, Django REST Framework, PostgreSQL, Oracle, APIs REST, integrações, modernização de aplicações e soluções com Inteligência Artificial Generativa.
+          </p>
+          <p data-i18n="aboutPara3">
+            Tenho interesse especial em LLMs, Prompt Engineering, Embeddings, RAG e automações inteligentes aplicadas a produtos, processos e sistemas corporativos.
+          </p>
+        </div>
+      </section>
+
+      <section id="experience" class="section" aria-labelledby="experience-title">
+        <div class="section-header">
+          <p class="eyebrow" data-i18n="experienceEyebrow">Timeline interativa</p>
+          <h2 id="experience-title" data-i18n="experienceHeading">Experiência profissional</h2>
+          <p data-i18n="experienceLead">Clique em uma empresa para ver os detalhes.</p>
+        </div>
+
+        <div class="timeline-layout">
+          <div class="timeline" id="timelineList" aria-label="Lista de experiências profissionais"></div>
+          <article class="experience-panel" id="experiencePanel" aria-live="polite"></article>
+        </div>
+      </section>
+
+      <section id="skills" class="section" aria-labelledby="skills-title">
+        <div class="section-header">
+          <p class="eyebrow" data-i18n="skillsEyebrow">Skills dinâmicas</p>
+          <h2 id="skills-title" data-i18n="skillsHeading">Tecnologias e competências</h2>
+          <p data-i18n="skillsLead">Selecione uma habilidade para ver onde ela se encaixa no meu perfil.</p>
+        </div>
+        <div class="skills-layout">
+          <div class="skill-buttons" id="skillButtons"></div>
+          <article class="skill-detail" id="skillDetail" aria-live="polite"></article>
+        </div>
+      </section>
+
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <div class="section-header">
+          <p class="eyebrow" data-i18n="projectsEyebrow">Projetos e ideias</p>
+          <h2 id="projects-title" data-i18n="projectsHeading">Projetos para demonstrar minhas habilidades</h2>
+          <p data-i18n="projectsLead">Clique em um card para abrir mais detalhes.</p>
+        </div>
+        <div class="project-grid" id="projectGrid"></div>
+      </section>
+
+      <section id="genai" class="section" aria-labelledby="genai-title">
+        <div class="section-header">
+          <p class="eyebrow" data-i18n="genaiEyebrow">Laboratório Gen AI</p>
+          <h2 id="genai-title" data-i18n="genaiHeading">Assistente sobre Richelle</h2>
+          <p data-i18n="genaiLead">Uma simulação simples usando JavaScript. Depois, pode evoluir para integração com API Django + OpenAI.</p>
+        </div>
+
+        <div class="assistant-card">
+          <div class="quick-questions">
+            <button data-question="python" data-i18n="questionPython">Quais tecnologias ele domina?</button>
+            <button data-question="devops" data-i18n="questionDevops">Qual experiência com DevOps?</button>
+            <button data-question="experiencia" data-i18n="questionExperience">Onde trabalhou?</button>
+            <button data-question="projetos" data-i18n="questionProjects">Quais projetos tem no GitHub?</button>
+          </div>
+          <div class="chat-box" id="chatBox">
+            <p class="assistant-message" data-i18n="assistantInitial">Olá! Clique em uma pergunta acima para explorar o perfil profissional do Richelle.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section" aria-labelledby="contact-title">
+        <div class="section-header">
+          <p class="eyebrow" data-i18n="contactEyebrow">Contato</p>
+          <h2 id="contact-title" data-i18n="contactHeading">Vamos conversar?</h2>
+          <p data-i18n="contactLead">Aberto a oportunidades remotas, internacionais e projetos estratégicos em backend, integrações e GenAI.</p>
+        </div>
+
+        <div class="contact-grid">
+          <a class="contact-card" href="mailto:brunodealmeida17@hotmail.com">
+            <span data-i18n="contactEmailLabel">Email</span>
+            brunodealmeida17@hotmail.com
+          </a>
+          <a class="contact-card" href="tel:+5561993069676">
+            <span data-i18n="contactPhoneLabel">Telefone</span>
+            +55 61 9 9306 9676
+          </a>
+          <a class="contact-card" href="https://www.linkedin.com/in/brunodealmeidamiranda" target="_blank" rel="noopener noreferrer">
+            <span data-i18n="contactLinkedInLabel">LinkedIn</span>
+            /in/brunodealmeidamiranda
+          </a>
+          <a class="contact-card" href="https://github.com/brunodealmeida17" target="_blank" rel="noopener noreferrer">
+            <span data-i18n="contactGitHubLabel">GitHub</span>
+            /brunodealmeida17
+          </a>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Fechar modal">×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
