@@ -355,7 +355,7 @@ const projects = [
 
 const answers = {
   pt: {
-    python: 'Bruno domina Python, Django, Flask, FastAPI e React.js. Trabalha com PostgreSQL, MySQL, DynamoDB, REST APIs, WebSockets e scripts ETL. Atualmente aplica LLMs e IA Generativa em sistemas corporativos na Mirante Tecnologia.',
+    python: 'Bruno domina Python, Django, Flask, FastAPI e React.js. Trabalha com PostgreSQL, MySQL, DynamoDB, REST APIs, WebSockets e scripts ETL e integraçoes entre sistema na Mirante Tecnologia.',
     devops: 'Bruno utiliza Docker e AWS como ferramentas de suporte ao desenvolvimento, além de SonarQube e Checkmarx para qualidade e Secure Coding. Certificado em DevOps Essentials e Scrum Foundation pela CertiProf.',
     experiencia: 'Bruno atua atualmente na Mirante Tecnologia (Mai/2025, remoto) como Desenvolvedor Python, com foco em sistemas corporativos, APIs, ETL e IA Generativa. Anteriormente trabalhou na CTC Tech (2024), SensorWeb (2022–2024) e BRQ Solutions (estágio, 2021–2022).',
     projetos: 'No GitHub (github.com/brunodealmeida17) há projetos como HealthScribe (plataforma médica com IA e WhatsApp), digital-wallet-api, sistema-bancario-flask, apicursos (FastAPI), task-management e bot-telegram.'
@@ -392,7 +392,7 @@ const translations = {
     aboutEyebrow: 'Sobre mim',
     aboutHeading: 'Mais de 5 anos construindo sistemas Python robustos, APIs e soluções com IA.',
     aboutPara1: 'Minha trajetória começou como estagiário na BRQ Solutions em 2021, onde aprendi as bases de Python. Ao longo dos anos, atuei na SensorWeb e CTC Tech acumulando experiência sólida em APIs, automação, sistemas distribuídos e React.js.',
-    aboutPara2: 'Atualmente na Mirante Tecnologia, desenvolvo sistemas corporativos em Python e Django, APIs REST, scripts ETL e soluções com Inteligência Artificial Generativa, aplicando LLMs a fluxos de negócio reais. Utilizo SonarQube e Checkmarx para garantir Secure Coding.',
+    aboutPara2: 'Atualmente na Mirante Tecnologia, desenvolvo sistemas corporativos em Python e Django, APIs REST, scripts ETL e integrações entre sistemas para fluxos de negócio reais. Utilizo SonarQube e Checkmarx para garantir Secure Coding.',
     aboutPara3: 'Tenho interesse especial em IA Generativa, LLMs, engenharia de software com foco em Clean Code, arquitetura de APIs e automação inteligente de processos corporativos.',
     experienceEyebrow: 'Timeline interativa',
     experienceHeading: 'Experiência profissional',
