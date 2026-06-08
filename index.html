@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="ambient-grid" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
   <div class="app-shell">
     <aside class="sidebar">
       <div class="profile-card">
@@ -56,9 +58,29 @@
               <button class="primary-action" data-section-target="projects" data-i18n="heroPrimaryAction">Ver projetos</button>
               <button class="secondary-action" data-section-target="genai" data-i18n="heroSecondaryAction">Abrir Gen AI Lab</button>
             </div>
+            <div class="hero-stack" aria-label="Stack principal">
+              <span>Python</span>
+              <span>Django</span>
+              <span>FastAPI</span>
+              <span>AWS</span>
+              <span>Docker</span>
+              <span>LLMs</span>
+            </div>
           </div>
 
-          <div class="dashboard" aria-label="Resumo profissional em números">
+          <div class="hero-visual" aria-label="Resumo profissional e arquitetura">
+            <div class="system-map" aria-hidden="true">
+              <div class="node node-main">API</div>
+              <div class="node node-db">SQL</div>
+              <div class="node node-ai">LLM</div>
+              <div class="node node-cloud">AWS</div>
+              <div class="node node-ci">CI</div>
+              <span class="route route-one"></span>
+              <span class="route route-two"></span>
+              <span class="route route-three"></span>
+              <span class="route route-four"></span>
+            </div>
+            <div class="dashboard" aria-label="Resumo profissional em números">
             <article class="metric-card">
               <span class="metric" data-counter="5">0</span>
               <p data-i18n="metricYears">anos de experiência</p>
@@ -75,6 +97,7 @@
               <span class="metric" data-counter="4">0</span>
               <p data-i18n="metricAreas">áreas de atuação</p>
             </article>
+            </div>
           </div>
         </div>
       </section>

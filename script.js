@@ -147,28 +147,28 @@ const experiences = [
 
 const skills = [
   {
-    name: 'Python',
-    nameEn: 'Python',
-    nameIt: 'Python',
+    name: 'Python Backend',
+    nameEn: 'Python Backend',
+    nameIt: 'Backend Python',
     level: 95,
-    description: 'Linguagem principal para backend, automação e APIs. Domínio em POO, Pytest e funções Lambda.',
-    descriptionEn: 'Main language for backend, automation and APIs. Proficient in OOP, Pytest and Lambda functions.',
-    descriptionIt: 'Linguaggio principale per backend, automazione e API. Competenza in OOP, Pytest e funzioni Lambda.',
-    topics: ['Django', 'Flask', 'FastAPI', 'Pytest', 'POO'],
-    topicsEn: ['Django', 'Flask', 'FastAPI', 'Pytest', 'OOP'],
-    topicsIt: ['Django', 'Flask', 'FastAPI', 'Pytest', 'OOP']
+    description: 'Linguagem principal para backend, automação, ETL e integrações. Foco em código limpo, POO, testes e scripts confiáveis para operação.',
+    descriptionEn: 'Main language for backend, automation, ETL and integrations. Focused on clean code, OOP, testing and reliable operational scripts.',
+    descriptionIt: 'Linguaggio principale per backend, automazione, ETL e integrazioni. Focus su clean code, OOP, test e script affidabili per operazioni.',
+    topics: ['POO', 'Pytest', 'ETL', 'AWS Lambda', 'Automação'],
+    topicsEn: ['OOP', 'Pytest', 'ETL', 'AWS Lambda', 'Automation'],
+    topicsIt: ['OOP', 'Pytest', 'ETL', 'AWS Lambda', 'Automazione']
   },
   {
-    name: 'Frameworks & APIs',
-    nameEn: 'Frameworks & APIs',
-    nameIt: 'Framework & API',
+    name: 'APIs & Frameworks Web',
+    nameEn: 'APIs & Web Frameworks',
+    nameIt: 'API & Framework Web',
     level: 92,
     description: 'Construção de APIs escaláveis e sistemas web robustos com Django, Flask e FastAPI, seguindo boas práticas de arquitetura.',
     descriptionEn: 'Building scalable APIs and robust web systems with Django, Flask and FastAPI, following architecture best practices.',
     descriptionIt: 'Costruzione di API scalabili e sistemi web robusti con Django, Flask e FastAPI, seguendo le best practice architetturali.',
-    topics: ['Django', 'Flask', 'FastAPI', 'Django REST Framework', 'WebSockets'],
-    topicsEn: ['Django', 'Flask', 'FastAPI', 'Django REST Framework', 'WebSockets'],
-    topicsIt: ['Django', 'Flask', 'FastAPI', 'Django REST Framework', 'WebSocket']
+    topics: ['Django REST Framework', 'Django Admin', 'Flask', 'FastAPI', 'WebSockets'],
+    topicsEn: ['Django REST Framework', 'Django Admin', 'Flask', 'FastAPI', 'WebSockets'],
+    topicsIt: ['Django REST Framework', 'Django Admin', 'Flask', 'FastAPI', 'WebSocket']
   },
   {
     name: 'Bancos de Dados',
@@ -217,6 +217,18 @@ const skills = [
     topics: ['SonarQube', 'Checkmarx', 'Prometheus', 'Grafana', 'Pytest', 'Selenium'],
     topicsEn: ['SonarQube', 'Checkmarx', 'Prometheus', 'Grafana', 'Pytest', 'Selenium'],
     topicsIt: ['SonarQube', 'Checkmarx', 'Prometheus', 'Grafana', 'Pytest', 'Selenium']
+  },
+  {
+    name: 'Soft Skills & Comunicação',
+    nameEn: 'Soft Skills & Communication',
+    nameIt: 'Soft Skill & Comunicazione',
+    level: 88,
+    description: 'Comunicação assertiva para alinhar expectativas, reduzir conflitos e melhorar a colaboração em times técnicos. Certificação Alura: Comunicação Assertiva: Reduzindo conflitos e frustrações, 6h, concluída em 11/2024.',
+    descriptionEn: 'Assertive communication to align expectations, reduce conflict and improve collaboration in technical teams. Alura certification: Assertive Communication: reducing conflicts and frustrations, 6h, completed in 11/2024.',
+    descriptionIt: 'Comunicazione assertiva per allineare aspettative, ridurre conflitti e migliorare la collaborazione nei team tecnici. Certificazione Alura: Comunicazione assertiva: ridurre conflitti e frustrazioni, 6h, completata in 11/2024.',
+    topics: ['Comunicação assertiva', 'Escuta ativa', 'Feedback objetivo', 'Colaboração', 'Gestão de conflitos'],
+    topicsEn: ['Assertive communication', 'Active listening', 'Objective feedback', 'Collaboration', 'Conflict management'],
+    topicsIt: ['Comunicazione assertiva', 'Ascolto attivo', 'Feedback oggettivo', 'Collaborazione', 'Gestione dei conflitti']
   }
 ];
 
@@ -386,8 +398,8 @@ const translations = {
     experienceHeading: 'Experiência profissional',
     experienceLead: 'Clique em uma empresa para ver os detalhes.',
     skillsEyebrow: 'Skills dinâmicas',
-    skillsHeading: 'Tecnologias e competências',
-    skillsLead: 'Selecione uma habilidade para ver onde ela se encaixa no meu perfil.',
+    skillsHeading: 'Hard skills e soft skills',
+    skillsLead: 'Selecione uma competência para ver como ela contribui no meu perfil técnico e colaborativo.',
     projectsEyebrow: 'Projetos no GitHub',
     projectsHeading: 'Projetos para demonstrar minhas habilidades',
     projectsLead: 'Clique em um card para abrir mais detalhes.',
@@ -436,8 +448,8 @@ const translations = {
     experienceHeading: 'Professional experience',
     experienceLead: 'Click a company to see the details.',
     skillsEyebrow: 'Dynamic skills',
-    skillsHeading: 'Technologies and competencies',
-    skillsLead: 'Select a skill to see where it fits in my profile.',
+    skillsHeading: 'Hard skills and soft skills',
+    skillsLead: 'Select a competency to see how it supports my technical and collaborative profile.',
     projectsEyebrow: 'GitHub Projects',
     projectsHeading: 'Projects that showcase my skills',
     projectsLead: 'Click a card to open more details.',
@@ -486,8 +498,8 @@ const translations = {
     experienceHeading: 'Esperienza professionale',
     experienceLead: 'Clicca un\'azienda per vedere i dettagli.',
     skillsEyebrow: 'Competenze dinamiche',
-    skillsHeading: 'Tecnologie e competenze',
-    skillsLead: 'Seleziona una skill per vedere dove si inserisce nel mio profilo.',
+    skillsHeading: 'Hard skill e soft skill',
+    skillsLead: 'Seleziona una competenza per vedere come contribuisce al mio profilo tecnico e collaborativo.',
     projectsEyebrow: 'Progetti su GitHub',
     projectsHeading: 'Progetti per mostrare le mie abilità',
     projectsLead: 'Clicca su una card per aprire più dettagli.',
@@ -523,6 +535,7 @@ const targetButtons = document.querySelectorAll('[data-section-target]');
 const counters = document.querySelectorAll('[data-counter]');
 const languageButtons = document.querySelectorAll('.lang-button');
 let countersStarted = false;
+const cursorGlow = document.getElementById('cursorGlow');
 
 const languageSuffix = {
   en: 'En',
@@ -569,6 +582,7 @@ languageButtons.forEach(button => {
 function showSection(sectionId) {
   sections.forEach(section => section.classList.toggle('active-section', section.id === sectionId));
   navLinks.forEach(link => link.classList.toggle('active', link.dataset.section === sectionId));
+  revealVisibleCards();
 
   if (sectionId === 'home' && !countersStarted) {
     animateCounters();
@@ -686,7 +700,10 @@ function renderProjects() {
     card.addEventListener('keydown', event => {
       if (event.key === 'Enter') openProjectModal(Number(card.dataset.index));
     });
+    attachTilt(card);
   });
+
+  revealVisibleCards();
 }
 
 function openProjectModal(index) {
@@ -731,9 +748,38 @@ document.getElementById('themeToggle').addEventListener('click', () => {
   localStorage.setItem('portfolio-theme', document.body.classList.contains('light') ? 'light' : 'dark');
 });
 
+function attachTilt(card) {
+  card.addEventListener('pointermove', event => {
+    const rect = card.getBoundingClientRect();
+    const x = ((event.clientX - rect.left) / rect.width - .5) * 6;
+    const y = ((event.clientY - rect.top) / rect.height - .5) * -6;
+    card.style.transform = `perspective(900px) rotateX(${y}deg) rotateY(${x}deg) translateY(-2px)`;
+  });
+
+  card.addEventListener('pointerleave', () => {
+    card.style.transform = '';
+  });
+}
+
+function revealVisibleCards() {
+  document.querySelectorAll('.active-section, .active-section .project-card, .active-section .text-card, .active-section .experience-panel, .active-section .skill-detail, .active-section .assistant-card, .active-section .contact-card').forEach((element, index) => {
+    element.classList.remove('reveal-in');
+    window.setTimeout(() => element.classList.add('reveal-in'), index * 45);
+  });
+}
+
+if (cursorGlow && window.matchMedia('(pointer: fine)').matches) {
+  window.addEventListener('pointermove', event => {
+    cursorGlow.style.left = `${event.clientX}px`;
+    cursorGlow.style.top = `${event.clientY}px`;
+    cursorGlow.style.opacity = '1';
+  });
+}
+
 if (localStorage.getItem('portfolio-theme') === 'light') {
   document.body.classList.add('light');
 }
 
 applyLanguage(currentLang);
 animateCounters();
+revealVisibleCards();
